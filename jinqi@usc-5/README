@@ -1,0 +1,61 @@
+Name: jinqi
+USC NetID: jinqi
+CS 455 PA4
+FALL 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+
+------------Jin Qi----------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+WordFinder：used TreeMap to store all the valid string and its score.
+It contains the main function, and calScore healper function. calScore is used to calculate the score of the input, and it calls the AnagramDictionary class to get the standard wold list and calls the ScoreTable to calculate the score of the particular word string. In the main function, it do the exception check first, if the file does not exit, it will exit. And then, it calls the rack class to find all the subsets of the input string, use the calScore helper function to calculate scores and sort them in order and output finally.   
+
+AnagramDictionary：used the HashMap to store the string and its anagrams.
+It contains the preprosess and getAnagramsOf helper function. The preprosess is to do some preparation work like it discard strange character and sort the remaining alphabet letter. In the getAnagramsOf function, it returns all the anagram of the string. In the AnagramDictionary, it do exception check first, and then creates an anagram dictionary, using the map structure, which is used to store all the anagrams of a word in the value position using a ArrayList structure, the key is the word itself.
+
+Rack:used the ArrayList to store all the returned subsets
+It is used to find all the valid subsets of the word. It contains preprocess function, it deletes strange character first, and it constrcut a map to do the string statistic, record the unique letter and its appearence times, finally stores in the unique string  and mult array, the unique is the key of the map and the mult is the corresponding value of the map. The allSubsets is a function to find all the subset of the string and the parameters are unique and mult. The getSubsets function is used to return the subsets.
+
+ScoreTable：use the array to stote the score table
+It is used to get the score of the string. In the  ScoreTable, it sets up an table to store all the score of each letter. And in the calculateScore function, it check the score table and sum up the score of each letter and the return the score of the input string.
+
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
+

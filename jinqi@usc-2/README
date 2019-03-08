@@ -1,0 +1,60 @@
+Name: jinqi@usc.edu
+USC NetId:3991265704
+CSCI 455 PA1
+Fall 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+JIN QI
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+
+1.The outside code resources students will be allowed to use in assignments for this class are limited to code written by the course staff for the purposes of helping students in the course, or code from the textbook for this course.
+
+2. What is the probability of each of the three outcomes in a trial: two heads, one head and one tail, and two tails? Why is one of them different than the other two?
+P(two heads) = 1/4
+P(one head and one Tail) = 1/2
+P(two tails) = 1/4
+The probilitity of getting one head and one tail is higer than the other two because the event of two tosses will have 4 outcomes and there are no order between two tosses, TT,TH,HT,HH is all the possible situation, therefore the event of one head and one tail is more likely to happen.
+
+3.Roughly how many trials do you need to do before you mostly get results within 1% of these probabilities? Do several simulations using your program to determine an answer to this. You just need a general order of magnitude, not an exact answer.
+
+About 800 trials.
+
+4.Roughly how many trials can you do before it crashes with an overflow error?
+
+The limit of jave integer is -2147483648 ～ 2147483647. Here it crashes after 10^9.
+
+
